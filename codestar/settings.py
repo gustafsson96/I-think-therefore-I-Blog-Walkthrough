@@ -28,7 +28,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = [
     '8000-gustafsson96-i-think-the-mwhidkkkad.us2.codeanyapp.com', 'i-think-therefore-i-blog1.herokuapp.com', 'localhost', 'i-think-therefore-i-blog1-6c8b234af888.herokuapp.com']
